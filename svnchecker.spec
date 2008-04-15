@@ -1,5 +1,5 @@
 %define	name	svnchecker
-%define	version	0.1.2
+%define	version	0.2
 %define	release	%mkrel 1
 
 Name:		%{name}
@@ -8,8 +8,9 @@ Release:	%{release}
 Summary:    Framework for Subversion pre-commit hook scripts
 License:    GPL
 Group:      Graphical desktop/GNOME
-URL:        http://svnchecker.sourceforge.net/
-Source:     http://downloads.sourceforge.net/svnchecker/%{name}-%{version}.tar.gz
+URL:        http://svnchecker.tigris.org/
+Source:     http://svnchecker.tigris.org/files/documents/6233/42081/%{name}-%{version}.tar.gz
+Patch:      svnchecker-0.2-no-config-file.patch
 BuildRequires:  python-devel
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
@@ -21,6 +22,7 @@ code style or unit tests.
 
 %prep
 %setup -q
+%patch -p 1
 
 %build
 python setup.py build
@@ -28,14 +30,13 @@ python setup.py build
 %install
 rm -rf %{buildroot}
 python setup.py install --root=%{buildroot}
-rm -f %{buildroot}%{_prefix}/config/svncheckerconfig.ini
 
 %clean
 rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc README svncheckerconfig.ini
+%doc README LICENSE
 %{_bindir}/Main.py
 %{python_sitelib}/checks
 %{python_sitelib}/handlers
