@@ -1,0 +1,18 @@
+diff -Naur --exclude '*~' svnchecker-0.2/setup.py svnchecker-0.2-no-config-file/setup.py
+--- svnchecker-0.2/setup.py	2008-03-12 11:17:16.000000000 +0100
++++ svnchecker-0.2-no-config-file/setup.py	2008-04-15 23:42:36.000000000 +0200
+@@ -29,7 +29,6 @@
+       url='http://svnchecker.tigris.org',
+       packages = ['checks', 'handlers', 'modules'],
+       scripts=['Main.py'],    
+-      data_files=[('config', ['svncheckerconfig.ini'])],  
+       classifiers=[
+           'Development Status :: 2 - Pre-Alpha',
+           'Environment :: Console',
+@@ -43,4 +42,4 @@
+           'Topic :: Software Development :: Bug Tracking',
+           'Topic :: Software Development :: Version Control',
+           ],
+-     )
+\ Pas de fin de ligne à la fin du fichier.
++     )
