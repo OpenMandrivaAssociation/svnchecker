@@ -43,3 +43,33 @@ rm -rf %{buildroot}
 %{python_sitelib}/modules
 %{python_sitelib}/*.egg-info
 
+
+
+%changelog
+* Tue Nov 02 2010 Michael Scherer <misc@mandriva.org> 0.3-4mdv2011.0
++ Revision: 592366
+- rebuild for python 2.7
+
+* Sun Sep 20 2009 Thierry Vignaud <tv@mandriva.org> 0.3-3mdv2010.0
++ Revision: 445269
+- rebuild
+
+* Fri Jan 02 2009 Funda Wang <fwang@mandriva.org> 0.3-2mdv2009.1
++ Revision: 323367
+- rebuild
+
+* Mon Jul 21 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.3-1mdv2009.0
++ Revision: 239332
+- new version
+
+* Tue Apr 15 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.2-1mdv2009.0
++ Revision: 194393
+- new version
+
+* Sun Feb 10 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.1.2-1mdv2008.1
++ Revision: 164900
+- import svnchecker
+
+
+* Sun Feb 10 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.1.2-1mdv2008.1
+- first mdv release  
