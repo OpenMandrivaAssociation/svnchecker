@@ -3,7 +3,7 @@
 
 Name:		svnchecker
 Version:	0.3
-Release:	5
+Release:	6
 Summary:    Framework for Subversion pre-commit hook scripts
 License:    GPL
 Group:      Graphical desktop/GNOME
