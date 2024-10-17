@@ -7,7 +7,7 @@ Release:	6
 Summary:    Framework for Subversion pre-commit hook scripts
 License:    GPL
 Group:      Graphical desktop/GNOME
-URL:        http://svnchecker.tigris.org/
+URL:        https://svnchecker.tigris.org/
 Source:     http://svnchecker.tigris.org/files/documents/6233/42081/%{name}-%{version}.tar.gz
 Patch:      svnchecker-0.2-no-config-file.patch
 BuildRequires:  python-devel
